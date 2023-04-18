@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script data-main="js/main" src="js/lib/requirejs.js"></script>
+    <style>
+        /* Set styles for HTML elements */
+        h1,
+        h2 {
+            font-family: arial;
+            text-align: center;
+        }
+
+        .imageInput {
+            width: 100%;
+            text-align: center;
+        }
+
+        .imageResult {
+            font-family: arial;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .uploadedImage {
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MakeUseOf Image Classifier</h1>
+
+    <h2>Click "Choose File" to Add an Image</h2>
+    
+    <!-- Container for image classification result -->
+    <div class="imageResult" id="imageResult"></div>
+    
+    <div class="imageInput">
+        <input id="image" type="file"/>
+    </div>
+    
+    <!-- Container for the uploaded image -->
+    <img class="uploadedImage" id="uploadedImage" />
+
+
+</body>
+
+</html>
